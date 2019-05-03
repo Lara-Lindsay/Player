@@ -1,0 +1,178 @@
+/* Playlist HTML */
+
+* {
+    font-family: 'Arvo', serif;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    background-image: linear-gradient(to top, #000000, #0c0c0c,rgb(51, 3, 28));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 120%;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 80%;
+    color: #ffffff;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3% 4%;
+    width: 100%;
+    height: 15%
+}
+
+.voltar {
+    border: none;
+    background: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controlb, .controla {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+#btop, #btpause, #library {
+    color: #ffffff;
+    background: none;
+    cursor: pointer;
+}
+
+#container, #cont {
+    height: 10%;
+    width: 100%;
+}
+
+.music {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#audiotime {
+    display: flex;
+    justify-content: space-around;
+    margin: 2%;
+    align-items: center;
+    width: 100%;
+}
+
+/* #bdbdbd */
+
+.timebar {
+    height: 5px;
+    width: 50%;
+    position: relative;
+    background: #212121;
+    border-radius: 8px;
+}
+
+.timefirst, .timesecond {
+    margin: 0%;
+    border: none;
+    color: #bdbdbd;
+}
+
+#info {
+    flex-direction: column;
+    width: 95%;
+    justify-content: flex-end;
+    display: flex;
+}
+
+img {
+    width: 5%;
+    height: 5%;
+    margin-right: 4%;
+}
+
+#playlist1, #playlist2 {
+    display: flex;
+    padding: 5%;
+    margin-left: 10%;
+    align-items: center;
+}
+
+#playlists {
+    height: 65%;
+    width: 90%
+}
+/* dropdown */
+
+#crud {
+    background: none;
+    color: #ffffff;
+    margin-left: 65%;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    display: block;
+    margin-left: 70%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    font-size: 80%;
+    width: 300%;
+}
+
+.dropdown-content a {
+    background-color: #0c0c0c;
+    color: #979797;
+    padding: 5%;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #ffffff
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title> Player - No Face </title>
+    <link rel="stylesheet" href="css/criaraddstyle.css">
+    <link rel="icon" href="./img/nofaceicon.png" type="imagem/png">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+
+<body>
+    <div id="main">
+        <header class="cabecalho">
+            <a href="playlist.html">
+                <button class="voltar"><i class="material-icons">keyboard_arrow_left</i></button></a>
+            <h1>Criar Playlist</h1>
+        </header>
+
+        <div id="musicas">
+            <h2><button id="add"><i class="material-icons">add</i></button>God's Plan - Drake </h2>
+            <h2><button id="add"><i class="material-icons">add</i></button>Knee Socks - Arctic Monkeys </h2>
+            <h2><button id="add"><i class="material-icons">add</i></button>Pay The Man - Foster The People </h2>
+            <h2><button id="add"><i class="material-icons">add</i></button>Sweet Lies- EXO </h2>
+            <h2><button id="add"><i class="material-icons">add</i></button>Tranquility Base Hotel Casino - Arctic
+                Monkeys </h2>
+            <h2><button id="add"><i class="material-icons">add</i></button>Will He - Joji </h2>
+        </div>
+
+        <div class="info">
+            <a href="index.html ">
+                <h1> God's Plan </h1>
+                <h2> Drake </h2>
+            </a>
+        </div>
+        <div id="audiotime">
+            <audio id="player" src="music/God's Plan.mp3"></audio>
+            <div class="timefirst">0:00</div>
+            <div class="timebar"><span></span> </div>
+            <div class="timesecond">3:42</div>
+        </div>
+
+        <div id="container">
+            <nav class="controlb">
+                <button id="btop"><i class="material-icons-round">shuffle</i></button>
+                <button id="btop"><i class="material-icons-round">skip_previous</i></button>
+                <button id="btop" onclick="play()"><i class="material-icons-round fa-2x">play_arrow</i></button>
+                <button id="btop" onclick="pause()"><i class="material-icons-round">pause</i></button>
+                <button id="btop"><i class="material-icons-round">skip_next</i></button>
+                <button id="btop"><i class="material-icons-round">repeat</i></button>
+        </div>
+    </div>
+    </nav>
+    <script type="text/javascript" src="JavaScript/JS.js"></script>
+</body>
+
+</html>
