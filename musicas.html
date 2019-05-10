@@ -18,40 +18,38 @@
         <header class="cabecalho">
             <a href="index.html ">
                 <button class="voltar"><i class="material-icons">keyboard_arrow_left</i></button></a>
-            <h1>Musicas</h1>
+            <h2>Musicas</h2>
         </header>
 
         <div id="musicas">
-            <h2><button id="add"><i class="material-icons">clear</i></button>God's Plan - Drake </h2>
-            <h2><button id="add"><i class="material-icons">clear</i></button>Knee Socks - Arctic Monkeys </h2>
-            <h2><button id="add"><i class="material-icons">clear</i></button>Pay The Man - Foster The People </h2>
-            <h2><button id="add"><i class="material-icons">clear</i></button>Sweet Lies- EXO </h2>
-            <h2><button id="add"><i class="material-icons">clear</i></button>Tranquility Base Hotel Casino - Arctic
-                Monkeys </h2>
-            <h2><button id="add"><i class="material-icons">clear</i></button>Will He - Joji </h2>
+            <h1><button id="add"><i class="material-icons">clear</i></button>God's Plan - Drake </h1>
+            <h1><button id="add"><i class="material-icons">clear</i></button>Knee Socks - Arctic Monkeys </h1>
+            <h1><button id="add"><i class="material-icons">clear</i></button>Pay The Man - Foster The People </h1>
+            <h1><button id="add"><i class="material-icons">clear</i></button>Sweet Lies- EXO </h1>
+            <h1><button id="add"><i class="material-icons">clear</i></button>Tranquility Base Hotel Casino - Arctic
+                Monkeys </h1>
+            <h1><button id="add"><i class="material-icons">clear</i></button>Will He - Joji </h2>
         </div>
 
         <div class="info">
             <a href="index.html">
-                <h1> God's Plan </h1>
-                <h2> Drake </h2>
+                <h2> God's Plan - Drake </h2>
             </a>
         </div>
         <div id="audiotime">
-            <audio id="player" src="music/God's Plan.mp3"></audio>
-            <div class="timefirst">0:00</div>
-            <div class="timebar"><span></span> </div>
-            <div class="timesecond">3:42</div>
+            <audio class="audio" id="player"></audio>
+            <div><span class="timestart"></span></div>
+            <div class="timebar"><span id="time"></span> </div>
+            <div><span class="timeend"></span></div>
         </div>
 
         <div id="container">
             <nav class="controlb">
                 <button id="btop"><i class="material-icons-round">shuffle</i></button>
-                <button id="btop"><i class="material-icons-round">skip_previous</i></button>
-                <button id="btop" onclick="play()"><i class="material-icons-round fa-2x">play_arrow</i></button>
-                <button id="btop" onclick="pause()"><i class="material-icons-round">pause</i></button>
-                <button id="btop"><i class="material-icons-round">skip_next</i></button>
-                <button id="btop"><i class="material-icons-round">repeat</i></button>
+                <button id="btskip" onclick="skip()"><i class="material-icons-round">skip_previous</i></button>
+                <button id="playpausebtn" onclick="playpause()"><i class="material-icons-round fa-2x">play_arrow</i></button>
+                <button id="btnext" onclick="next()"><i class="material-icons-round">skip_next</i></button>
+                <button id="btloop" onclick="loop()"><i class="material-icons-round">repeat</i></button>
         </div>
     </div>
     </nav>

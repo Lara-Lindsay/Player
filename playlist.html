@@ -52,21 +52,27 @@
 
         <div id="info">
             <div class="music">
-                <button id="btop"><i class="material-icons-round">skip_previous</i></button>
                 <a href="index.html ">
                     <h2> God's Plan - Drake </h2>
                 </a>
-                <button id="btop"><i class="material-icons-round">skip_next</i></button>
             </div>
             <div id="audiotime">
-                <audio id="player" src="music/God's Plan.mp3"></audio>
-                <div class="timefirst">0:00</div>
-                <div class="timebar"><span></span> </div>
-                <div class="timesecond">3:42</div>
+                <audio class="audio" id="player"></audio>
+                <div><span class="timestart"></span></div>
+                <div class="timebar"><span id="time"></span> </div>
+                <div><span class="timeend"></span></div>
             </div>
         </div>
-
+        <div id="container">
+            <nav class="controlb">
+                <button id="btop"><i class="material-icons-round">shuffle</i></button>
+                <button id="btskip" onclick="skip()"><i class="material-icons-round">skip_previous</i></button>
+                <button id="playpausebtn" onclick="playpause()"><i class="material-icons-round fa-2x">play_arrow</i></button>
+                <button id="btnext" onclick="next()"><i class="material-icons-round">skip_next</i></button>
+                <button id="btloop" onclick="loop()"><i class="material-icons-round">repeat</i></button>
+        </div>
     </div>
+    <script type="text/javascript" src="JavaScript/JS.js"></script>
 </body>
 
 </html>

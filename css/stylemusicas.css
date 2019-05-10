@@ -18,7 +18,7 @@ body {
 }
 
 #main {
-    background-image: linear-gradient(to top, #000000, #0c0c0c,rgb(51, 3, 28));
+    background-image: linear-gradient(to top, #000000, #0c0c0c,#1A237E);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -32,18 +32,19 @@ a {
 }
 
 h1 {
-    font-size: 120%;
-    color: #ffffff;
-    text-align: center;
-    width: 100%;
-}
-
-h2 {
     font-size: 100%;
     color: #979797;
     margin: 1%;
     display: flex;
     align-items: center;
+}
+
+h2 {
+    font-size: 80%;
+    color: #979797;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .cabecalho {
@@ -70,7 +71,7 @@ h2 {
     align-items: center;
 }
 
-#btop, #btpause, #library {
+#btop, #playpausebtn, #btloop, #btshuffle, #btnext, #btskip {
     color: #ffffff;
     background: none;
     cursor: pointer;
@@ -95,10 +96,21 @@ h2 {
     width: 50%;
     position: relative;
     background: #212121;
-    border-radius: 8px;
+    border-radius: 14px;	
 }
 
-.timefirst, .timesecond {
+#time {
+    display: block;
+    height: 5px;
+    width: 0%;
+    border-radius: 10px;
+    background-color: #cac6c6;
+    position: relative;
+    overflow: hidden;
+    transition: width .1s linear;
+  }
+
+.timeend, .timestart {
     border: none;
     color: #bdbdbd;
 }
@@ -107,7 +119,7 @@ h2 {
     display: flex;
     margin-left: 10%;
     flex-direction: column;
-    height: 55%;
+    height: 60%;
     width: 90%;
     justify-content: center;
 }
@@ -122,4 +134,28 @@ h2 {
 
 #add:hover {
     color: #b00020
+}
+
+#btop:hover {
+    color: #757575;
+}
+
+#playpausebtn:hover {
+    color: #757575;
+}
+
+#btloop:hover {
+    color: #757575;
+}
+
+#btshuffle:hover {
+    color: #757575;
+}
+
+#btnext:hover {
+    color: #757575;
+}
+
+#btskip:hover {
+    color: #757575;
 }

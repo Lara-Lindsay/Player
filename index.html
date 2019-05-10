@@ -20,31 +20,29 @@
                 <button id="library"><i class="material-icons-outlined">playlist_add</i></button>
             </a>
             <a href="musicas.html">
-            <button class="btmenu"><i class="material-icons-outlined">playlist_play</i></button>
-        </a>
+                <button class="btmenu"><i class="material-icons-outlined">playlist_play</i></button>
+            </a>
         </header>
         <div class="album">
             <img class="cover" src="img/godsplan.png" alt="">
         </div>
         <div class="info">
-            <h1> God's Plan </h1>
-            <h2> Drake </h2>
+            <h2 id="musicas"></h2>
         </div>
         <div id="audiotime">
-            <audio id="player" src="music/God's Plan.mp3"></audio>
-            <div class="timefirst">0:00</div>
-            <div class="timebar"><span></span> </div>
-            <div class="timesecond">3:42</div>
+            <audio class="audio" id="player"></audio>
+            <span id="timestart">0:00</span>
+            <div class="timebar"><span id="time"></span></div>
+            <span id="timeend">0:00</span>
         </div>
 
         <div id="container">
             <nav class="controlb">
-                <button id="btop"><i class="material-icons-round">shuffle</i></button>
-                <button id="btop"><i class="material-icons-round">skip_previous</i></button>
-                <button id="btop" onclick="play()"><i class="material-icons-round fa-2x">play_arrow</i></button>
-                <button id="btop" onclick="pause()"><i class="material-icons-round">pause</i></button>
-                <button id="btop"><i class="material-icons-round">skip_next</i></button>
-                <button id="btop"><i class="material-icons-round">repeat</i></button>
+                <button id="btop" onclick="aleat()"><i class="material-icons-round">shuffle</i></button>
+                <button id="btskip" onclick="skip()"><i class="material-icons-round">skip_previous</i></button>
+                <button id="playpausebtn" onclick="playpause()"><i class="material-icons-round fa-2x">play_arrow</i></button>
+                <button id="btnext" onclick="next()"><i class="material-icons-round">skip_next</i></button>
+                <button id="btloop" onclick="loop()"><i class="material-icons-round">repeat</i></button>
         </div>
     </div>
     </nav>
