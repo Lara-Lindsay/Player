@@ -81,6 +81,7 @@ function next() {
     i++;
   }
   document.getElementById("musicas").innerHTML = nome[i].musicas;
+  document.getElementById("cover").src = album[i].cover;
   audio.src = player[i].music;
   //tempoMusica();
   temp = 0;
@@ -90,23 +91,30 @@ function next() {
 function skip() {
   if (i == 0) {
     i = 4;
-    playpause();
+    
   }
   else {
     i--;
     temp = 0;
   }
   document.getElementById("musicas").innerHTML = nome[i].musicas;
+  document.getElementById("cover").src = album[i].cover;
   audio.src = player[i].music;
-  audio.play();
   temp = 0;
+  p=1;
+  playpause();
 }
 
 function aleat() {
   i= Math.floor(Math.random()*4+0);
   document.getElementById("musicas").innerHTML = nome[i].musicas;
+  document.getElementById("cover").src = album[i].cover;
   p=1;
   audio.src = player[i].music;
-  //document.getElementById("timeend").innerText = "0:00";
   playpause();
+ }
+
+function loop() {
+  music.loop=true;
+  music.load();
 }

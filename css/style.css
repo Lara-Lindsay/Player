@@ -78,6 +78,11 @@ h2 {
     cursor: pointer;
 }
 
+#btAVol {
+    color: #ffffff;
+    background: none;
+    cursor: pointer;
+}
 
 .album {
     display: flex;
@@ -90,8 +95,8 @@ h2 {
 .info {
     display: flex;
     margin-top: 5%;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center
 }
 
 #audiotime {
